@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EmosicBackendApplication {
 
 	public static void main(String[] args) {
+		String MONGO_USER = System.getenv("MONGO_USER");
+		String MONGO_PASSWORD = System.getenv("MONGO_PASSWORD");
+		String MONGO_CLUSTER = System.getenv("MONGO_CLUSTER");
 		SpringApplication.run(EmosicBackendApplication.class, args);
 	}
 
